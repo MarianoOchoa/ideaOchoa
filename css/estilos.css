@@ -1,0 +1,299 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*COMIENZO DEL HEADER*/
+.encabezado{
+    background-color: white;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: solid 0.5px black;   
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    background-color: rgb(236, 233, 233);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+div h1{
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.lista{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+
+.lista li a{ 
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px;
+    padding: 1px;
+    text-decoration: none;
+    justify-content: space-around;
+    margin-right: 40px;
+
+}
+
+/*grid*/
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 2fr 2fr;
+    grid-template-areas: "titulo"
+    "sectionUno"
+    "sectionDos";
+    grid-column-gap: 10px;
+    grid-row-gap: 55px;
+}
+
+/*imagenes y textos*/
+h2{
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-area: titulo;
+    justify-content: center;
+}
+
+.sectionUno{
+    grid-area: sectionUno;
+    display: flex;
+
+}
+.sectionDos{
+    grid-area: sectionDos;
+    display: flex;
+}
+
+img{
+    width:49vw;
+    
+}
+
+
+
+
+/*COMIENZO DEL MAIN*/
+.nosotros {
+    position: absolute;
+    top: 700%;
+
+}
+
+
+main span{
+    position: absolute;
+    top: 100%;
+}
+
+.profes{
+    position: absolute;
+    top: 100%;
+    height: 40%;
+    width: 20%;
+    
+}
+
+.textos{
+    position: absolute;
+    top: 100%;
+    font-size: larger;
+
+}
+
+section span {
+    position: absolute;
+    right: 30%;
+}
+
+
+
+.fotos{
+    display: block;
+    position: absolute;
+    height: 30px;
+    top: 25%;
+
+}
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textoUno {
+    position: absolute;
+    font: larger;
+    top: 25%;
+    left: 800px;
+
+}
+.textoDos{
+    position: absolute;
+    font: larger;
+    top: 110%;
+    left: 800px;
+}
+
+#textoUno{
+    position: absolute;
+    top: 100%;
+    left: 350px;
+}
+#textoDos{
+    position: absolute;
+    top: 160%;
+    left: 350px;
+}
+
+.nosotrosText{
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: brown;
+}
+
+.formulario {
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    align-content: flex-start;
+    
+}
+
+#leyenda {
+    text-align: center;
+}
+
+.tabla {
+    margin: 15px;
+}
+
+/*COMIENZO DEL FOOTER*/
+footer  {
+    background-color: red;
+    border:solid 2px brown;
+    position: relative;
+    top: 250%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    margin-top: 50px;
+    align-items: center;
+    
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+.imagenUno{
+    grid-area: imagenUno;
+}
+.imagenDos{
+    grid-area: imagenDos;
+}
+
+@media (max-width: 480px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .lista{
+        display: grid;
+    
+    }
+
+
+    main{
+        display: grid;
+        grid-template-rows: 0.2fr 2fr 2fr;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "titulo"
+        "sectionUno"
+        "sectionDos";
+    }
+    .indexUno{
+        display: none!important;
+    }
+    .indexDos{
+        display: none;
+    }
+    main h2{
+        font-size: medium;
+        grid-area: titulo;
+        margin-bottom: 0px;
+        justify-content: center;
+    }
+    .imagenUno{
+        grid-area: imagenUno;
+    }
+    .imagenDos{
+        grid-area: imagenDos;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px){
+    
+    header{
+        display: flex;
+        align-items: center;
+    }
+    main {
+        display: grid;
+        grid-template-rows: 0.2fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas:"titulo"
+        "sectionUno"
+        "sectionDos";
+    }
+
+    main h2{
+        grid-area: titulo;
+    
+    }
+
+    .sectionUno{
+        grid-area: sectionUno;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionDos{
+        grid-area: sectionDos;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    img{
+        width: 100%;
+    }
+ 
+}
+
